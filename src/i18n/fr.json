@@ -1,0 +1,9 @@
+{
+  "HELLO": "holla {{value}}",
+  "HOME": "Domicile",
+  "ABOUT": "Sur",
+  "CONTACT": "Contact",
+  "ABOUT_DETAIL":"This is about detail page in French.",
+  "SUB1": "Sub Page 1",
+  "SUB2": "Sub Page 2"
+}

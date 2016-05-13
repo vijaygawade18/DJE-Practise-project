@@ -1,0 +1,9 @@
+{
+  "HELLO": "hello eng {{value}}",
+  "HOME": "Home",
+  "ABOUT": "About",
+  "CONTACT": "Contact",
+  "ABOUT_DETAIL":"This is about detail page.",
+  "SUB1": "Sub Page 1",
+  "SUB2": "Sub Page 2"
+}
