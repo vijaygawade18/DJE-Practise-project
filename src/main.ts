@@ -6,6 +6,7 @@ import {TRANSLATE_PROVIDERS,TranslateService} from 'ng2-translate/ng2-translate'
 
 import {AppComponent} from './app/app.component';
 import {HTTP_PROVIDERS} from 'angular2/http';
+import {TodoService} from "./app/main-section/contact/todo-input/todo-service";
 
 if ('<%= ENV %>' === 'prod') { enableProdMode(); }
 
@@ -18,7 +19,8 @@ bootstrap(AppComponent, [
   // use this if you want to use another loader
  // provide(TranslateLoader, {useClass: TranslateStaticLoader}),
   // not required, but recommended to have 1 unique instance of your service
-  TranslateService
+  TranslateService,
+  TodoService
 ]);
 
 // In order to start the Service Worker located at "./sw.js"

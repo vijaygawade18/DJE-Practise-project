@@ -2,7 +2,7 @@
 @import 'colors';
 
 /* Reset */
-html, body, div {
+html, body{
   border: 0;
   margin: 0;
   padding: 0;
@@ -60,3 +60,74 @@ button {
 button:hover {
   background-color: #28739E;
 }
+
+/*-- Custom css --*/
+
+sd-contact{
+  .container{
+    margin-left: 15px;
+    margin-right: 15px;
+    ul{
+      list-style: none;
+      margin: 16px 0;
+      padding:0;
+      display: block;
+      width:280px;
+      li{
+        cursor: pointer;
+        transition: padding 0.3s;
+        &:hover {
+          padding-left:8px;
+          color:#233dcb;
+          font-weight: bold;
+          border-left:3px solid #233dcb;
+        }
+      }
+    }
+    .info{
+      margin-top:10px;
+      label{
+        display: inline-block;
+        min-width: 140px;
+      }
+    }
+    .marBtm10{
+      margin-bottom:10px;
+    }
+    .secondary-nav{
+      padding: 10px 0;
+      display: inline-block;
+      margin: 10px 0 0 0;
+      a{
+        font-size: 14px;
+        font-weight: 500;
+        outline: none;
+        text-decoration: none;
+        background: snow;
+        color: #106cc8;
+        padding: 5px 10px;
+        border-radius: 5px;
+        border: 1px solid #106cc8;
+        &.router-link-active{
+          color:  snow!important;
+          background: #106cc8 !important;
+        }
+      }
+    }
+  }
+  .clicked{
+    color: #FF0000;
+  }
+  input{
+    height: auto;
+    padding:5px;
+    border-radius: 5px;
+  }
+  button {
+    background: #106cc8;
+    PADDING: 6px 10px;
+    height: auto;
+    border-radius: 5px;
+  }
+}
+

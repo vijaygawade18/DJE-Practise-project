@@ -6,6 +6,7 @@ import {ToolbarComponent} from './toolbar/toolbar.component';
 import {ContactComponent} from './main-section/contact/contact.component';
 import {HomeComponent} from './main-section/home/home.component';
 import {TranslatePipe,TranslateService}  from 'ng2-translate/ng2-translate';
+import {ContactListComponent} from "./main-section/contact/contact-list/contact-list.component";
 
 
 @Component({
@@ -19,8 +20,7 @@ import {TranslatePipe,TranslateService}  from 'ng2-translate/ng2-translate';
 @RouteConfig([
   { path: '/', name: 'Home',  component: HomeComponent  },
   { path: '/about/...', name: 'About', component: AboutComponent },
-  { path: '/contact', name: 'Contact', component: ContactComponent }
-
+  { path: '/contact/...', name: 'Contact', component: ContactComponent }
 ])
 export class AppComponent {
   param: string = 'world';

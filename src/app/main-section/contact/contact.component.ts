@@ -1,5 +1,10 @@
 import {Component} from 'angular2/core';
-import {CoursesComponent} from './courses.component';
+import {ContactService} from "./contact-service";
+import {RouteConfig, ROUTER_DIRECTIVES} from 'angular2/router';
+import {NewContact} from "./new-contacts/new-contacts.component";
+import {OldContact} from "./old-contacts/old-contacts.component";
+import {TranslatePipe}  from 'ng2-translate/ng2-translate';
+import {TodoInput} from "./todo-input/todo-input.component";
 
 
 @Component({
@@ -7,8 +12,18 @@ import {CoursesComponent} from './courses.component';
     moduleId: module.id,
     templateUrl: './contact.component.html',
     styleUrls: ['./contact.component.css'],
-    directives:[CoursesComponent]
+    providers: [ContactService],
+    directives: [ROUTER_DIRECTIVES],
+    pipes: [TranslatePipe]
+    //inputs: ["contact"]
 })
-export class ContactComponent {
+
+@RouteConfig([
+    {path: '/OldContact', name: 'OldContact', component:OldContact, useAsDefault: true},
+    {path: '/NewContact', name: 'NewContact', component:NewContact},
+    {path: '/TodoInput', name: 'Todo', component: TodoInput}
+])
+
+export class ContactComponent{
 
 }

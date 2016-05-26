@@ -1,1 +1,9 @@
-<courses></courses>
+<div class="container">
+    <nav class="secondary-nav">
+        <a [routerLink]="['OldContact']">{{'OLDCONTACT' | translate}} </a>&nbsp;
+        <a [routerLink]="['NewContact']">{{'NEWCONTACT' | translate}}</a>&nbsp;
+        <a [routerLink]="['Todo']">{{'TODO' | translate}}</a>
+    </nav>
+    <div style="clear: both;"></div>
+    <router-outlet></router-outlet>
+</div>

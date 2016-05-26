@@ -1,0 +1,29 @@
+<div>
+    <ul>
+        <li *ngFor="#contact of contacts"
+            (click)="onSelect(contact)" [class.clicked]="selectedContact === contact">
+            {{contact.firstName}} {{contact.lastName}}
+        </li>
+    </ul>
+    <div class="info">
+        <div class="marBtm10">
+            <label for="first-name" id="first-name">First Name:</label>
+            <input type="text" [(ngModel)]="selectedContact.firstName">
+        </div>
+        <div class="marBtm10">
+            <label for="last-name" id="last-name">Last Name:</label>
+            <input type="text" [(ngModel)]="selectedContact.lastName">
+        </div>
+        <div class="marBtm10">
+            <label for="phone" id="phone">Phone Number:</label>
+            <input type="text" [(ngModel)]="selectedContact.phone">
+        </div>
+        <div class="marBtm10">
+            <label for="email" id="email">Email-id: </label>
+            <input type="text" [(ngModel)]="selectedContact.email">
+        </div>
+        <div class="marBtm10">
+           <button>Create new contact from this contact</button>
+        </div>
+    </div>
+</div>
